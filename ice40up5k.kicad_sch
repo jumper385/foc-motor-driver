@@ -5,6 +5,288 @@
 	(uuid "09ac49a2-80b6-4c77-9ade-683fd9a8fb15")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Analog_ADC:AD40xxBCPZ"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 5.08 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AD40xxBCPZ"
+				(at 10.16 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_CSP:LFCSP-WD-10-1EP_3x3mm_P0.5mm_EP1.64x2.38mm"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad4003-4007-4011.pdf"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "18-Bit, 2 MSPS/1 MSPS/500 kSPS, Differential SAR ADCs, 2.4V to 5.1V reference, 1.8V supply, 1.71 to 5.5V logic IO, 3x3mm LFCSP-10"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "ADC 18-bit AD4003BCPZ AD4007BCPZ AD4011BCPZ"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*LFCSP?WD*EP?3x3mm?P0.5mm?EP1.64x2.38mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AD40xxBCPZ_1_1"
+				(polyline
+					(pts
+						(xy -5.08 7.62) (xy -12.7 0) (xy -5.08 -7.62) (xy 10.16 -7.62) (xy 10.16 7.62) (xy -5.08 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "IN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "IN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "REF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 10.16 270)
+					(length 2.54)
+					(name "VIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -10.16 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "CNV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "FPGA_Lattice:ICE40UP5K-SG48ITR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1228,6 +1510,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Analog_ADC:AD40xxBCPZ")
+		(at 229.87 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69cf99f5-59e6-45dc-996e-238439fce4bc")
+		(property "Reference" "U9"
+			(at 209.55 54.5398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AD40xxBCPZ"
+			(at 209.55 57.0798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:LFCSP-WD-10-1EP_3x3mm_P0.5mm_EP1.64x2.38mm"
+			(at 229.87 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad4003-4007-4011.pdf"
+			(at 229.87 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "18-Bit, 2 MSPS/1 MSPS/500 kSPS, Differential SAR ADCs, 2.4V to 5.1V reference, 1.8V supply, 1.71 to 5.5V logic IO, 3x3mm LFCSP-10"
+			(at 229.87 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "81270fdb-489e-45d1-8577-a389f132d568")
+		)
+		(pin "7"
+			(uuid "332a0e90-31e9-4478-88e3-8b39b56ac460")
+		)
+		(pin "3"
+			(uuid "3d1d2aca-4e5d-4a85-a359-629674b49380")
+		)
+		(pin "8"
+			(uuid "8fc56d2b-9912-42bc-87f1-f96a3cded8e6")
+		)
+		(pin "10"
+			(uuid "e55441ad-11c3-4d10-8d50-08aa686286f5")
+		)
+		(pin "2"
+			(uuid "f05109f7-584e-4af1-bb8e-a6e718d05da7")
+		)
+		(pin "5"
+			(uuid "56a0e690-e68c-4e19-93c1-b0208cbfb6ac")
+		)
+		(pin "4"
+			(uuid "cd3ce1d2-8b93-4da5-a5bc-c57481b7e363")
+		)
+		(pin "1"
+			(uuid "46bdbe75-c297-462e-87b1-902afac15941")
+		)
+		(pin "11"
+			(uuid "b2179823-6a99-499b-b340-d99c1780f6de")
+		)
+		(pin "9"
+			(uuid "4f1cc35e-e68c-462e-abe9-7193f9536f5d")
+		)
+		(instances
+			(project ""
+				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7/50cd93ad-1fc5-4405-9d49-49642eb09abc"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FPGA_Lattice:ICE40UP5K-SG48ITR")
 		(at 153.67 154.94 0)
 		(mirror y)
@@ -1645,6 +2022,196 @@
 				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7/50cd93ad-1fc5-4405-9d49-49642eb09abc"
 					(reference "U4")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_ADC:AD40xxBCPZ")
+		(at 229.87 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbc173ae-55f5-4ddd-aff0-d015c0330e89")
+		(property "Reference" "U10"
+			(at 209.55 79.9398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AD40xxBCPZ"
+			(at 209.55 82.4798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:LFCSP-WD-10-1EP_3x3mm_P0.5mm_EP1.64x2.38mm"
+			(at 229.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad4003-4007-4011.pdf"
+			(at 229.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "18-Bit, 2 MSPS/1 MSPS/500 kSPS, Differential SAR ADCs, 2.4V to 5.1V reference, 1.8V supply, 1.71 to 5.5V logic IO, 3x3mm LFCSP-10"
+			(at 229.87 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "2f469aca-8c8b-44ce-b918-3d64234cf2d9")
+		)
+		(pin "7"
+			(uuid "b12c81e4-cc9f-463d-a459-2765e94ad576")
+		)
+		(pin "3"
+			(uuid "42ccc117-126b-4e4d-94b8-6bfcd389ba7d")
+		)
+		(pin "8"
+			(uuid "573881cb-39a3-4176-9656-7e8c8d558d84")
+		)
+		(pin "10"
+			(uuid "d2e7b6d1-73e9-4a23-90a5-9e5a9c39fd29")
+		)
+		(pin "2"
+			(uuid "75e5bb6b-93ba-4a76-8a5f-82c1614f4ae3")
+		)
+		(pin "5"
+			(uuid "567ccbe9-b29f-4151-9097-0cca1a8bb16e")
+		)
+		(pin "4"
+			(uuid "276a7dcc-985f-4308-88a2-1ae929927882")
+		)
+		(pin "1"
+			(uuid "e76ce7b5-f012-4733-b9d2-d0dc48116830")
+		)
+		(pin "11"
+			(uuid "b910ce85-d613-4318-96fc-7f8295a76330")
+		)
+		(pin "9"
+			(uuid "22aebd49-afa9-48a8-b187-68e58127a717")
+		)
+		(instances
+			(project "kicad-template-project"
+				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7/50cd93ad-1fc5-4405-9d49-49642eb09abc"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_ADC:AD40xxBCPZ")
+		(at 229.87 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc87ef5c-cb08-483a-8b6e-fafb0bac015e")
+		(property "Reference" "U11"
+			(at 209.55 105.3398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AD40xxBCPZ"
+			(at 209.55 107.8798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:LFCSP-WD-10-1EP_3x3mm_P0.5mm_EP1.64x2.38mm"
+			(at 229.87 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad4003-4007-4011.pdf"
+			(at 229.87 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "18-Bit, 2 MSPS/1 MSPS/500 kSPS, Differential SAR ADCs, 2.4V to 5.1V reference, 1.8V supply, 1.71 to 5.5V logic IO, 3x3mm LFCSP-10"
+			(at 229.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "d0b66e8f-54c7-4603-a857-46f34a9e9534")
+		)
+		(pin "7"
+			(uuid "633e54ef-abac-4196-9d9c-c34863b1874f")
+		)
+		(pin "3"
+			(uuid "a8858eb4-ab80-4255-a4b9-93042cb40b47")
+		)
+		(pin "8"
+			(uuid "3d968227-94a3-47be-86c9-a4f6e961a90e")
+		)
+		(pin "10"
+			(uuid "6bdee28b-91af-46e1-ac58-6b1239c83311")
+		)
+		(pin "2"
+			(uuid "a8d236b2-d1be-42c3-a0a5-4b96b5eedb77")
+		)
+		(pin "5"
+			(uuid "10298e43-a201-4687-ad03-99e5ad9207c0")
+		)
+		(pin "4"
+			(uuid "16cf39c7-1f42-40f6-96e6-f75c760cec2e")
+		)
+		(pin "1"
+			(uuid "c389a5b7-d937-4299-86d4-638d37fabc3c")
+		)
+		(pin "11"
+			(uuid "5f6930c0-f8d2-437c-b81e-65d1ea0c8ab6")
+		)
+		(pin "9"
+			(uuid "b6bf2579-57c0-4850-b771-f41f5d5580f7")
+		)
+		(instances
+			(project "kicad-template-project"
+				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7/50cd93ad-1fc5-4405-9d49-49642eb09abc"
+					(reference "U11")
+					(unit 1)
 				)
 			)
 		)
