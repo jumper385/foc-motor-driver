@@ -5,7 +5,7 @@
 	(uuid "e1f256b3-686f-4e34-9512-fa5de8536fd7")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
+		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -14,15 +14,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Pin"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -47,21 +47,13 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 			(property "ki_keywords" "connector"
@@ -82,33 +74,21 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_Pin_1_1"
+			(symbol "Conn_01x04_1_1"
 				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type background)
 					)
 				)
 				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -117,10 +97,31 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
 					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -130,7 +131,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -148,7 +149,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -158,6 +159,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -265,6 +302,433 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Linear:MIC5219YM5"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MIC5219YM5"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "500mA low dropout linear regulator, adjustable output, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "500mA ultra-low-noise LDO linear voltage regulator adjustable positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MIC5219YM5_0_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MIC5219YM5_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "ADJ"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Switching:TPS54360DDA"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS54360DDA"
+				(at -7.62 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:TI_SO-PowerPAD-8_ThermalVias"
+				(at 1.27 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54360.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "3.5A, Step Down DC-DC Converter with Eco-mode, 4.5-60V Input Voltage, PowerSO-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Step-Down DC-DC Switching Regulator High Voltage High Frequency"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TI*SO*PowerPAD*ThermalVias*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS54360DDA_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS54360DDA_1_1"
+				(pin power_in line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "RT/CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GNDPAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "COMP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -483,6 +947,193 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:MIC5219YM5")
+		(at 81.28 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "484f5c97-a3ad-4f2e-81a1-5994ea489dbb")
+		(property "Reference" "U14"
+			(at 81.28 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MIC5219YM5"
+			(at 81.28 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 81.28 174.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf"
+			(at 81.28 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA low dropout linear regulator, adjustable output, SOT-23-5"
+			(at 81.28 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "8d4a7e57-8647-4e9e-9891-d3674fa81d79")
+		)
+		(pin "4"
+			(uuid "d25aeaa7-bccf-4e85-9169-bc955a43d7f7")
+		)
+		(pin "2"
+			(uuid "a96a8b7e-15cb-43b9-b4ec-d0320682c187")
+		)
+		(pin "1"
+			(uuid "360b04c8-d5e7-458c-a9ad-8e50657d0568")
+		)
+		(pin "3"
+			(uuid "eb00792d-710b-4b2b-9e63-f2cd7da06322")
+		)
+		(instances
+			(project "kicad-template-project"
+				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7"
+					(reference "U14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 63.5 33.02 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a190df2-46e5-4ca7-ae21-13f0977065ca")
+		(property "Reference" "J2"
+			(at 63.5 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 63.5 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0410_2x02-1MP_P3.00mm_Horizontal"
+			(at 63.5 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 63.5 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR_PN1" ""
+			(at 63.5 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR_PN2" ""
+			(at 63.5 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR_PN3" ""
+			(at 63.5 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC_PN" ""
+			(at 63.5 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0b0c468-ea9c-469d-838c-719a3b06117c")
+		)
+		(pin "3"
+			(uuid "fc3e2e20-df12-4e79-8db7-cee9e593e38d")
+		)
+		(pin "2"
+			(uuid "036b888f-dc6f-4b82-990b-6a38d418b02f")
+		)
+		(pin "4"
+			(uuid "49347ab8-aa80-4693-9cda-4ab232478661")
+		)
+		(instances
+			(project ""
+				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 208.28 124.46 270)
 		(unit 1)
@@ -586,42 +1237,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 76.2 41.91 0)
+		(lib_id "Regulator_Linear:MIC5219YM5")
+		(at 105.41 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "851c370f-0081-46f0-8242-5d5eae1d09e4")
-		(property "Reference" "J1"
-			(at 76.835 36.83 0)
+		(uuid "aacb672c-f5b5-4035-8fa4-98f953e2c911")
+		(property "Reference" "U15"
+			(at 105.41 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 76.835 39.37 0)
+		(property "Value" "MIC5219YM5"
+			(at 105.41 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
-			(at 76.2 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 41.91 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 105.41 174.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -629,8 +1271,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 76.2 41.91 0)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf"
+			(at 105.41 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -638,8 +1280,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFR_PN1" ""
-			(at 76.2 41.91 0)
+		(property "Description" "500mA low dropout linear regulator, adjustable output, SOT-23-5"
+			(at 105.41 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -647,43 +1289,193 @@
 				(hide yes)
 			)
 		)
-		(property "MFR_PN2" ""
-			(at 76.2 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "5"
+			(uuid "b9919ee2-0ce7-4254-8082-1fa8a73cec2d")
 		)
-		(property "MFR_PN3" ""
-			(at 76.2 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLC_PN" ""
-			(at 76.2 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0a9b12a-f10d-4d27-9ffd-bdd8e4a8f528")
+		(pin "4"
+			(uuid "7efda5e5-0da3-403d-b32e-daf52bee7f4d")
 		)
 		(pin "2"
-			(uuid "cd87a876-abe7-4dfb-a299-fc5dde90e799")
+			(uuid "f08367cd-5b83-49ce-b172-b110b0ec0f61")
+		)
+		(pin "1"
+			(uuid "a2663721-8b96-4a78-9312-4f43647f7ff2")
+		)
+		(pin "3"
+			(uuid "dd6651ef-0a71-4827-8424-477801775d38")
+		)
+		(instances
+			(project "kicad-template-project"
+				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7"
+					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:MIC5219YM5")
+		(at 81.28 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac395a57-ade8-484d-a934-8ec3d6035786")
+		(property "Reference" "U13"
+			(at 81.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MIC5219YM5"
+			(at 81.28 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 81.28 155.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf"
+			(at 81.28 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA low dropout linear regulator, adjustable output, SOT-23-5"
+			(at 81.28 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "b98f7d0a-da57-4a53-a4b3-4c63f6412f6a")
+		)
+		(pin "4"
+			(uuid "3e0260d7-b068-4d29-8d7d-265ae18e9a1e")
+		)
+		(pin "2"
+			(uuid "b1c64b86-2c65-46dd-a89b-60f6c520bb87")
+		)
+		(pin "1"
+			(uuid "c2e8334b-ebb8-4beb-8f4a-f2616714958c")
+		)
+		(pin "3"
+			(uuid "8536108e-d479-412f-80b0-d75a11a54edc")
 		)
 		(instances
 			(project ""
 				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7"
-					(reference "J1")
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:TPS54360DDA")
+		(at 52.07 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e42f8b1c-9996-43ea-ad0d-9ce58143951b")
+		(property "Reference" "U12"
+			(at 52.07 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS54360DDA"
+			(at 52.07 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8_ThermalVias"
+			(at 53.34 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54360.pdf"
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.5A, Step Down DC-DC Converter with Eco-mode, 4.5-60V Input Voltage, PowerSO-8"
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "228945f1-6b7e-402f-a7a2-955a94258f87")
+		)
+		(pin "3"
+			(uuid "80c12475-9dbf-4fe2-998c-255b0ccbbe41")
+		)
+		(pin "4"
+			(uuid "d1e31099-7325-4779-8c0c-31e22ddf9797")
+		)
+		(pin "2"
+			(uuid "fec6f8d0-5671-443e-9cf4-b9eb0cf358a9")
+		)
+		(pin "9"
+			(uuid "87902bfe-611e-406d-89b2-78c42acdc403")
+		)
+		(pin "1"
+			(uuid "376b149c-965d-41f0-9cd7-2aa720772806")
+		)
+		(pin "8"
+			(uuid "e94d79fb-d42e-4c98-af25-525d929bc68c")
+		)
+		(pin "6"
+			(uuid "f1be8404-47c4-4f4c-a766-04def3319a0d")
+		)
+		(pin "5"
+			(uuid "fd2404f5-2d08-41a6-a392-ad09eae65d03")
+		)
+		(instances
+			(project ""
+				(path "/e1f256b3-686f-4e34-9512-fa5de8536fd7"
+					(reference "U12")
 					(unit 1)
 				)
 			)
