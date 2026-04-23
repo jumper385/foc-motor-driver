@@ -149,7 +149,7 @@ outputs:
     options:
       ray_tracing: true
       rotate_x: 3
-      rotate_z: -2
+      rotate_z: -1
 
   # --- Interactive BOM ---
   - name: interactive_bom
