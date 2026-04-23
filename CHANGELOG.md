@@ -1,3 +1,9 @@
+## 0.2.2 (2026-04-23)
+
+### Fix
+
+- added placeholder stlink connector
+
 ## 0.2.1 (2026-04-23)
 
 ### Fix
