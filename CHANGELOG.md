@@ -1,3 +1,9 @@
+## 0.2.0 (2026-04-23)
+
+### Feat
+
+- done rough board placements for general shape
+
 ## 0.1.1 (2026-04-22)
 
 ### Fix
