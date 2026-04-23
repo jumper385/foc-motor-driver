@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_NAME: can-debugger
+  PROJECT_NAME: foc-motor-ctrl
 
 jobs:
   build:
@@ -62,4 +62,4 @@ jobs:
           tag_name: v${{ steps.cz.outputs.version }}
           name: Release v${{ steps.cz.outputs.version }}
           body_path: _changelog_body.md
-          files: ${{ env.PROJECT_NAME }}_v${{ steps.cz.outputs.version }}.tar.gz
+          files: ${{ env.PROJECT_NAME }}_hw-release_v${{ steps.cz.outputs.version }}.tar.gz
