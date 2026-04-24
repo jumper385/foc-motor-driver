@@ -1,3 +1,12 @@
+## 0.2.3 (2026-04-24)
+
+### Fix
+
+- adjusting positioning of programmign header
+- fleshignout schematic for mcu, fpga and mag + peripherals
+
+## v0.2.2 (2026-04-23)
+
 ## 0.2.2 (2026-04-23)
 
 ### Fix
