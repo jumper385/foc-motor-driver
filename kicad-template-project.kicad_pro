@@ -137,8 +137,8 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -477,7 +477,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1016,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -488,8 +488,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
+        "track_width": 0.1016,
+        "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -706,12 +706,24 @@
       "CAN"
     ],
     [
+      "a841937d-da7f-4d6e-a5d2-fdccbb8073da",
+      "ADC1"
+    ],
+    [
       "239aab14-7c61-4378-98ce-e28ed823006b",
       "MAG"
     ],
     [
       "499a69c9-1762-4b10-a316-136ce40218fe",
       "PSU"
+    ],
+    [
+      "4890829f-b4eb-468f-8e38-2da464d8c06f",
+      "ADC0"
+    ],
+    [
+      "3f64a868-6c80-4269-8e10-954f9b003901",
+      "ADC2"
     ]
   ],
   "text_variables": {}
