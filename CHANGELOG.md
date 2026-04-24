@@ -1,3 +1,9 @@
+## 0.2.4 (2026-04-24)
+
+### Fix
+
+- finalized position of fpc programmer
+
 ## 0.2.3 (2026-04-24)
 
 ### Fix
